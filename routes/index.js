@@ -1,6 +1,6 @@
 const UserRoutes = require ('./UserRoutes');
 const CompanyRoutes = require ('./CompanyRoutes');
-const ContactRoutes = require ('./ContactRoutes');
+const ContractRoutes = require ('./ContractRoutes');
 const PayRoutes = require ('./PayRoutes');
 const SkillRoutes = require ('./SkillRoutes');
 const UserSkillRoutes = require ('./UserSkillRoutes');
@@ -8,7 +8,7 @@ const UserSkillRoutes = require ('./UserSkillRoutes');
 module.exports = {
     UserRoutes,
     CompanyRoutes,
-    ContactRoutes,
+    ContractRoutes,
     PayRoutes,
     SkillRoutes,
     UserSkillRoutes
