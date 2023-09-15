@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const {UserSkillController} = require('../controllers/UserSkillController');
 
 router.get('/',UserSkillController.getUserSkills);
 
