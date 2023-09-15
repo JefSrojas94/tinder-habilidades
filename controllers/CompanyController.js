@@ -38,3 +38,11 @@ const  deleteCompany = (req,res) => {
     .then(results => res.status(201).json(results))
     .catch(error => res.status(500).json(error));
 };
+
+module.exports = {
+    getCompanys,
+    getCompany,
+    insertCompany,
+    updateCompany,
+    deleteCompany
+}
