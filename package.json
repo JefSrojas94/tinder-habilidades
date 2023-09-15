@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "knex": "knex init",
-    "knex_migrations": "knex migrate:make user-skills && knex migrate:make users && knex migrate:make skills && knex migrate:make pays && knex migrate:make contracts && knex migrate:make companys"
+    "knex_migrations": "knex migrate:make user-skills && knex migrate:make users && knex migrate:make skills && knex migrate:make pays && knex migrate:make contracts && knex migrate:make companys",
+    "knex_latest":"knex migrate:latest"
   },
   "keywords": [],
   "author": "",
