@@ -3,7 +3,17 @@
  * @returns { Promise<void> }
  */
 exports.up = function(knex) {
-  
+    return knex.schema.hasTable('pays').then((exists)=>{
+        if (!exists) {
+            return knex.schema.createTable("pays", function(table){
+                table.increments("id").primary();
+                table.integer('num_contract').references('num_contract').inTable('contracts');
+                table.integer('anticip_value').notNullable();
+                table.integer('residue').notNullable();
+                table.date('date_pay').notNullable();              
+            });
+        }
+    });
 };
 
 /**
