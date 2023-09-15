@@ -20,7 +20,7 @@ const updatePay = (idPay,pay) =>{
     .update(pay)
 };
 
-const deleteSkill = (idPay) =>{
+const deletePay = (idPay) =>{
     return database('pays')
     .where('id','=',idPay)
     .del()
@@ -31,5 +31,5 @@ module.exports ={
     getPay,
     insertPay,
     updatePay,
-    deleteSkill
+    deletePay
 }
