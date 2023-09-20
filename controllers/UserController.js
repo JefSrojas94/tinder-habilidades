@@ -40,7 +40,7 @@ const  deleteUser = (req,res) => {
     .catch(error => res.status(500).json(error));
 };
 
-module.exports ={
+module.exports = {
     getUser,
     getUsers,
     insertUser,

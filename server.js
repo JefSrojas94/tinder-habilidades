@@ -7,7 +7,7 @@ const Routes = require('./routes');
 server.use('/api/v1/users', Routes.UserRoutes);
 server.use('/api/v1/company', Routes.CompanyRoutes);
 server.use('/api/v1/skills', Routes.SkillRoutes);
-server.use('/api/v1/contracts', Routes.ContactRoutes);
+server.use('/api/v1/contracts', Routes.ContractRoutes);
 server.use('/api/v1/pays', Routes.PayRoutes);
 server.use('/api/v1/userskills', Routes.UserSkillRoutes);
 
