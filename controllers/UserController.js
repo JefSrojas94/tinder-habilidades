@@ -26,7 +26,7 @@ const  updateUser = (req,res) => {
     const {id} = req.params
     const {first_name, last_name, fee} = req.body
     userModel
-    .updateClient(id,{first_name, last_name, fee})
+    .updateUser(id,{first_name, last_name, fee})
     .then(results => res.status(201).json(results))
     .catch(error => res.status(500).json(error));
 };

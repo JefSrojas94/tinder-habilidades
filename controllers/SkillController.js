@@ -26,7 +26,7 @@ const  updateSkill = (req,res) => {
     const {id} = req.params
     const {description} = req.body
     skillModel
-    .updateClient(id,{description})
+    .updateSkill(id,{description})
     .then(results => res.status(201).json(results))
     .catch(error => res.status(500).json(error));
 };
